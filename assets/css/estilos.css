@@ -2,6 +2,55 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+
+/* Tamaño de texto para pantallas grandes (escritorio) */
+h1.navbar-title {
+  font-size: 2rem; 
+  margin: 0;
+}
+
+/* Tamaño de texto para tablets (entre 768px y 1024px) */
+@media (max-width: 1024px) {
+  h1.navbar-title {
+      font-size: 2.8rem; 
+  }
+}
+
+/* Ajustes para móviles grandes (max-width: 768px) */
+@media (max-width: 768px) {
+  h1.navbar-title {
+      font-size: 1.5rem; 
+  }
+}
+
+/* Ajustes para móviles medianos (max-width: 576px) */
+@media (max-width: 576px) {
+  h1.navbar-title {
+      font-size: 1.2rem; 
+  }
+}
+
+/* Ajustes para móviles pequeños (max-width: 400px) */
+@media (max-width: 400px) {
+  h1.navbar-title {
+      font-size: 1rem; 
+  }
+}
+
+
+.navbar-nav .nav-link {
+  color: #000000;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Cambios al pasar el cursor (hover) sobre el enlace */
+.navbar-nav .nav-link:hover {
+  background-color: #699bc7; 
+  color: #000000; 
+}
+
+
 /* Hero Section */
 
 #Hero-Section {
